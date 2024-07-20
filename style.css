@@ -66,7 +66,7 @@ body {
 }
 .leftSVG,
 .rightSVG {
-  transition: transform 0.3s ease-in-out;
+  transition: transform 500ms ease-in-out;
 }
 .crystal-holder-text {
   display: flex;
@@ -135,4 +135,25 @@ body {
   align-items: center;
   color: white;
   font-size: larger;
+}
+.hall-of-remembrance-page {
+  height: 100vh;
+  display: grid;
+  grid-row: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.character-text {
+  color: white;
+  font-size: x-large;
+  justify-self: center;
+}
+.imgAndText-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+img[height="350px"] {
+  border: 0px solid rgb(0, 102, 255); /* Base border */
+  box-shadow: 0 0 100px rgba(0, 102, 255, 0.5);
 }
