@@ -76,6 +76,7 @@ body {
   padding-bottom: vh;
   font-size: 50px;
   padding-bottom: 15vh;
+  font-family: starWars;
 }
 @keyframes revealer {
   from {
@@ -93,4 +94,8 @@ body {
   to {
     opacity: 1;
   }
+}
+@font-face {
+  font-family: starWars;
+  src: url(./fonts/Starjedi.ttf);
 }
