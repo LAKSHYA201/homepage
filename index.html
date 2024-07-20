@@ -13,5 +13,23 @@
         <img src="images/right.svg" class="rightSVG" />
       </div>
     </div>
+    <div class="intro-page"></div>
+    <script>
+      const crystalHolder = document.querySelector(".crystal-holder");
+      const leftSVG = document.querySelector(".leftSVG");
+      const rightSVG = document.querySelector(".rightSVG");
+      let crystalTextDiv = document.createElement("h1");
+      crystalTextDiv.textContent = "Luke's Mansion";
+      let opener = () => {
+        leftSVG.style.transform = `translateX(30vw) scaleX(-1)`;
+        rightSVG.style.transform = `translateX(-30vw)`;
+        crystalHolder.classList.remove("crystal-holder");
+        crystalHolder.appendChild(crystalTextDiv);
+        crystalTextDiv.classList.add("crystal-holder-text");
+        crystalHolder.removeEventListener("click", opener);
+      };
+
+      crystalHolder.addEventListener("click", opener);
+    </script>
   </body>
 </html>

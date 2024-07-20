@@ -9,6 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .leftSVG {
   height: 145px;
@@ -37,12 +38,13 @@ body {
     rgba(0, 255, 139, 0) 70%
   );
 }
-.crystal-holder:hover {
+.crystal-holder {
   animation: bounce 2250ms;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   cursor: pointer;
 }
+
 @keyframes bounce {
   from {
     transform: translateY(0px);
@@ -58,5 +60,37 @@ body {
   }
   to {
     transform: translateY(0px);
+  }
+}
+.leftSVG,
+.rightSVG {
+  transition: transform 0.3s ease-in-out;
+}
+.crystal-holder-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  animation: revealer 1000ms;
+  padding-bottom: vh;
+  font-size: 50px;
+  padding-bottom: 15vh;
+}
+@keyframes revealer {
+  from {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  75% {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
   }
 }
