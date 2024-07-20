@@ -1,11 +1,13 @@
 body {
+  padding: 0px;
   margin: 0px;
   background-image: url("./images/bg.jpg");
   background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 .initial-page {
   height: 100vh;
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,6 +79,7 @@ body {
   font-size: 50px;
   padding-bottom: 15vh;
   font-family: starWars;
+  letter-spacing: 5px;
 }
 @keyframes revealer {
   from {
@@ -98,4 +101,38 @@ body {
 @font-face {
   font-family: starWars;
   src: url(./fonts/Starjedi.ttf);
+}
+
+.intro-page {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 7fr 3fr;
+}
+.intro {
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+}
+.intro-text,
+.lukeIMG-holder {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  font-size: larger;
+}
+.intro-text {
+  padding-right: 50px;
+}
+.lukeIMG {
+  border: 1px solid green; /* Base border */
+  box-shadow: 0 0 100px rgba(0, 255, 0, 0.5);
+}
+.have-a-look {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: larger;
 }

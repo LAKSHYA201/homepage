@@ -13,7 +13,34 @@
         <img src="images/right.svg" class="rightSVG" />
       </div>
     </div>
-    <div class="intro-page"></div>
+    <div class="intro-page">
+      <div class="intro">
+        <div class="lukeIMG-holder">
+          <img src="./images/luke.webp" class="lukeIMG" />
+        </div>
+        <div class="intro-text">
+          <h1>
+            Hi! I am Luke Skywalker, maintainer of this mansion and a Jedi. I
+            was born in the asteroid field of Polis Massa and grew up on
+            Tatooine. I met Uncle Ben or Obi-Wan-Kenobi when my sister Leia sent
+            a distress call soon before she was captured by Darth Vader who
+            happened to be my father Anakin Skywalker who turned to the dark
+            side after being manipulated by Senator Palpatine or Darth Sidious.
+            We formed a team with Hans Solo, pilot of the legendary Millennium
+            Falcon and wookie, Solo's buddy, took our flight to take down the
+            empire and rest is history...
+          </h1>
+        </div>
+      </div>
+      <div class="have-a-look">
+        <h2>
+          I wanted you to meet the people that have been around in my life but
+          sadly they aren't at the mansion but still make sure to have a look at
+          their hall of remembrance
+        </h2>
+      </div>
+    </div>
+
     <script>
       const crystalHolder = document.querySelector(".crystal-holder");
       const leftSVG = document.querySelector(".leftSVG");
@@ -21,7 +48,7 @@
       let crystalTextDiv = document.createElement("h1");
       crystalTextDiv.textContent = "Luke's Mansion";
       let opener = () => {
-        leftSVG.style.transform = `translateX(30vw) scaleX(-1)`;
+        leftSVG.style.transform = `translateX(35vw) scaleX(-1)`;
         rightSVG.style.transform = `translateX(-30vw)`;
         crystalHolder.classList.remove("crystal-holder");
         crystalHolder.appendChild(crystalTextDiv);
