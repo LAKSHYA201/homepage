@@ -1,3 +1,6 @@
+html {
+  zoom: 75%;
+}
 body {
   padding: 0px;
   margin: 0px;
@@ -156,4 +159,34 @@ body {
 img[height="350px"] {
   border: 0px solid rgb(0, 102, 255); /* Base border */
   box-shadow: 0 0 100px rgba(0, 102, 255, 0.5);
+}
+.footer {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: rgb(255, 255, 255);
+}
+h3,
+h2,
+h1 {
+  color: white;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: x-large;
+}
+.credits {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: larger;
+}
+.pointer {
+  animation: bounce 2000ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
