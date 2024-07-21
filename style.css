@@ -165,7 +165,7 @@ img[height="350px"] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: rgb(255, 255, 255);
-  margin-top: 20vh;
+  margin-top: 100vh;
 }
 h3,
 h2,
